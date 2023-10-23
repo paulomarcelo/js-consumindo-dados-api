@@ -20,3 +20,6 @@ console.log(conjuntoCeps);
 Promise.all(conjuntoCeps).then(respostas => console.log(respostas));
 
 */
+
+var cep = document.getElementById('cep');
+cep.addEventListener("focusout", () => buscaEndereco(cep.value));
